@@ -1,0 +1,11 @@
+create table test(
+c1 int,
+c2 int,
+c3 int,
+c4 int,
+c5 int);
+insert into test(c1, c2, c3, c4, c5) 
+values (1,0,0,0,0), (0,1,0,0,0), (0,0,1,0,0), (0,0,0,1,0), (0,0,0,0,1);
+#select * from test;
+
+select max(c1) as c1, max(c2) as c12, max(c3) as c3, max(c4) as c4, max(c5) as c5 from test;
